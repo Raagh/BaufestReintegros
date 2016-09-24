@@ -6,24 +6,37 @@ using System.Collections.Generic;
 using Android.Content;
 using Android.Provider;
 using Android.Database;
-using Reintegros.Droid;
-using Reintegros.Shared;
+using Reintegros.Shared.BL;
+using Reintegros.Shared.SL;
+using System.Threading.Tasks;
+using Android;
+using Android.Support.Design.Widget;
+using Android.Content.PM;
+using Android.Support.V4.App;
+using Android.Support.V7.App;
+using Android.Support.V4.Content;
 
-namespace POCShared.Droid
+namespace Reintegros.Droid
 {
     [Activity(Label = "Baufest Reintegros", MainLauncher = false, Icon = "@drawable/icon", Theme = "@style/AppTheme.Base")]
-    public class MainActivity : Activity
+    public class MainActivity : AppCompatActivity
     {
 
         public List<Android.Net.Uri> uriList = new List<Android.Net.Uri>();
+       
+        private const int REQUEST_EXTERNAL_STORAGE_ID = 0;
+
+        private readonly string[] EXTERNAL_STORAGE_PERMISSION = {Manifest.Permission.ReadExternalStorage};
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);           
             SetContentView(Resource.Layout.Main);
-           
+                      
             LoadDdls();
             LoadEvents();
+
+            GetAppPermissions();
         }
 
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
@@ -32,18 +45,47 @@ namespace POCShared.Droid
 
             if ((requestCode == 0) && (resultCode == Result.Ok) && (data != null))
             {
-                if (data.Data != null)
-                {
-                    uriList.Add(data.Data);
-                }              
-                else
-                {
-                    ClipData multiplePictures = data.ClipData;
-                 
-                    for (int i = 0; i < multiplePictures.ItemCount; i++)
+                GetSelectedPictures(data);
+            }
+        }
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
+        {
+            switch (requestCode)
+            {
+                case REQUEST_EXTERNAL_STORAGE_ID:
                     {
-                        uriList.Add(multiplePictures.GetItemAt(i).Uri);
+                        RelativeLayout layout = FindViewById<RelativeLayout>(Resource.Id.RelativeLayout);
+                        if (grantResults[0] == Permission.Granted)
+                        {
+                            //Permission granted
+                            var snack = Snackbar.Make(layout, "Permisos de lectura concedidos.", Snackbar.LengthShort);
+                            snack.Show();
+                        }
+                        else
+                        {
+                            //Permission Denied :(
+                            var snack = Snackbar.Make(layout, "Permisos de lectura denegados.", Snackbar.LengthShort);
+                            snack.Show();
+                        }
                     }
+                    break;
+            }
+        }
+
+        private void GetSelectedPictures(Intent data)
+        {
+            if (data.Data != null)
+            {
+                uriList.Add(data.Data);
+            }
+            else
+            {
+                ClipData multiplePictures = data.ClipData;
+
+                for (int i = 0; i < multiplePictures.ItemCount; i++)
+                {
+                    uriList.Add(multiplePictures.GetItemAt(i).Uri);
                 }
             }
         }
@@ -271,6 +313,22 @@ namespace POCShared.Droid
 
             return paths;
         }
+       
+        private void GetAppPermissions()
+        {
+            if ((ContextCompat.CheckSelfPermission(this, Manifest.Permission.ReadExternalStorage) != (int)Permission.Granted))
+            {
+                if (ActivityCompat.ShouldShowRequestPermissionRationale(this, Manifest.Permission.ReadExternalStorage))
+                {
+                    RelativeLayout layout = FindViewById<RelativeLayout>(Resource.Id.RelativeLayout);
+                    //Explain to the user why we need to read the contacts
+                    Snackbar.Make(layout, "Location access is required to show coffee shops nearby.", Snackbar.LengthIndefinite)
+                            .SetAction("OK", v => ActivityCompat.RequestPermissions(this, EXTERNAL_STORAGE_PERMISSION, REQUEST_EXTERNAL_STORAGE_ID))
+                            .Show();
+                }
+            }
+        }
+
 
     }   
 }

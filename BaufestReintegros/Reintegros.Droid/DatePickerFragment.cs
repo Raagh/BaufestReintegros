@@ -3,7 +3,7 @@ using Android.App;
 using Android.OS;
 using Android.Widget;
 
-namespace POCShared.Droid
+namespace Reintegros.Droid
 {
     public class DatePickerFragment : DialogFragment,
                                     DatePickerDialog.IOnDateSetListener

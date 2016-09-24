@@ -1,14 +1,14 @@
 using System.Net;
 using Android.App;
 using Android.OS;
+using Android.Support.V7.App;
 using Android.Widget;
-using POCShared.Droid;
-using Reintegros.Shared;
+using Reintegros.Shared.SL;
 
 namespace Reintegros.Droid
 {
     [Activity(Label = "Baufest Reintegros", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/AppTheme.Base")]
-    public class LoginActivity : Activity
+    public class LoginActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
         {

@@ -7,7 +7,8 @@
     android:id="@+id/scrollView">
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:id="@+id/RelativeLayout">
         <TextView
             android:id="@+id/lblTitle"
             android:layout_width="fill_parent"

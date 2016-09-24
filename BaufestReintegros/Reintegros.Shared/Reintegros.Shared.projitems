@@ -9,18 +9,18 @@
     <Import_RootNamespace>POCShared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)ListsReference.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Reintegro.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ServiceHelper.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)User.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)UserContainer.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)UsersReference.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)XmlHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BusinessLayer\Reintegro.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BusinessLayer\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BusinessLayer\UserContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataLayer\XmlHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServiceLayer\ServiceHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServiceLayer\SPListsService\ListsReference.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServiceLayer\SPUsersService\UsersReference.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)Lists.wsdl" />
-    <None Include="$(MSBuildThisFileDirectory)ListsReference.map" />
-    <None Include="$(MSBuildThisFileDirectory)UserGroup.wsdl" />
-    <None Include="$(MSBuildThisFileDirectory)UsersReference.map" />
+    <None Include="$(MSBuildThisFileDirectory)ServiceLayer\SPListsService\Lists.wsdl" />
+    <None Include="$(MSBuildThisFileDirectory)ServiceLayer\SPListsService\ListsReference.map" />
+    <None Include="$(MSBuildThisFileDirectory)ServiceLayer\SPUsersService\UserGroup.wsdl" />
+    <None Include="$(MSBuildThisFileDirectory)ServiceLayer\SPUsersService\UsersReference.map" />
   </ItemGroup>
 </Project>
