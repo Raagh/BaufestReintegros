@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package reintegros.droid;
+package baufest.reintegros;
 
 public final class R {
     public static final class attr {
