@@ -1,0 +1,12 @@
+Reintegros.Droid.LoginActivity, Reintegros.Droid;md58dfbf6f1f32558837995a9490b0ca0c2.LoginActivity
+Reintegros.Droid.LoginActivity, Reintegros.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md58dfbf6f1f32558837995a9490b0ca0c2.LoginActivity
+Reintegros.Droid.LoginActivity;md58dfbf6f1f32558837995a9490b0ca0c2.LoginActivity
+reintegros.droid.LoginActivity;md58dfbf6f1f32558837995a9490b0ca0c2.LoginActivity
+POCShared.Droid.DatePickerFragment, Reintegros.Droid;md5a1e914fb9e283ea035563282e3b3fb5f.DatePickerFragment
+POCShared.Droid.DatePickerFragment, Reintegros.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a1e914fb9e283ea035563282e3b3fb5f.DatePickerFragment
+POCShared.Droid.DatePickerFragment;md5a1e914fb9e283ea035563282e3b3fb5f.DatePickerFragment
+pocshared.droid.DatePickerFragment;md5a1e914fb9e283ea035563282e3b3fb5f.DatePickerFragment
+POCShared.Droid.MainActivity, Reintegros.Droid;md5a1e914fb9e283ea035563282e3b3fb5f.MainActivity
+POCShared.Droid.MainActivity, Reintegros.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a1e914fb9e283ea035563282e3b3fb5f.MainActivity
+POCShared.Droid.MainActivity;md5a1e914fb9e283ea035563282e3b3fb5f.MainActivity
+pocshared.droid.MainActivity;md5a1e914fb9e283ea035563282e3b3fb5f.MainActivity
