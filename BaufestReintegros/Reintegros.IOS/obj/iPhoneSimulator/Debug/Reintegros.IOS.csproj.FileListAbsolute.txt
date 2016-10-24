@@ -1,0 +1,12 @@
+C:\Users\pferraggi\Documents\GitHub\BaufestReintegros\BaufestReintegros\Reintegros.IOS\bin\iPhoneSimulator\Debug\Reintegros.IOS.exe
+C:\Users\pferraggi\Documents\GitHub\BaufestReintegros\BaufestReintegros\Reintegros.IOS\bin\iPhoneSimulator\Debug\Reintegros.IOS.pdb
+C:\Users\pferraggi\Documents\GitHub\BaufestReintegros\BaufestReintegros\Reintegros.IOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\pferraggi\Documents\GitHub\BaufestReintegros\BaufestReintegros\Reintegros.IOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+C:\Users\pferraggi\Documents\GitHub\BaufestReintegros\BaufestReintegros\Reintegros.IOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\pferraggi\Documents\GitHub\BaufestReintegros\BaufestReintegros\Reintegros.IOS\obj\iPhoneSimulator\Debug\optimized\Entitlements.plist
+C:\Users\pferraggi\Documents\GitHub\BaufestReintegros\BaufestReintegros\Reintegros.IOS\obj\iPhoneSimulator\Debug\optimized\
+C:\Users\pferraggi\Documents\GitHub\BaufestReintegros\BaufestReintegros\Reintegros.IOS\obj\iPhoneSimulator\Debug\Reintegros.IOS.exe
+C:\Users\pferraggi\Documents\GitHub\BaufestReintegros\BaufestReintegros\Reintegros.IOS\obj\iPhoneSimulator\Debug\Reintegros.IOS.pdb
+C:\Users\pferraggi\Documents\GitHub\BaufestReintegros\BaufestReintegros\Reintegros.IOS\obj\iPhoneSimulator\Debug\Reintegros.IOS.csprojResolveAssemblyReference.cache
+C:\Users\pferraggi\Documents\GitHub\BaufestReintegros\BaufestReintegros\Reintegros.IOS\obj\iPhoneSimulator\Debug\Reintegros.IOS.exe.mdb
+C:\Users\pferraggi\Documents\GitHub\BaufestReintegros\BaufestReintegros\Reintegros.IOS\bin\iPhoneSimulator\Debug\Reintegros.IOS.exe.mdb

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/RelativeLayout">
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Titulo:" />
+        <EditText
+            android:id="@+id/txtTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblTitle"
+            android:textColor="#00B0FF" />
+        <TextView
+            android:id="@+id/lblUser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitle"
+            android:text="Usuario:" />
+        <Spinner
+            android:id="@+id/ddlUser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblUser"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown" />
+        <TextView
+            android:id="@+id/lblSubunidad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ddlUser"
+            android:text="Subunidad:" />
+        <Spinner
+            android:id="@+id/ddlSubunidad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblSubunidad"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown" />
+        <TextView
+            android:id="@+id/lblSubproyecto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ddlSubunidad"
+            android:text="Proyecto.Subproyecto.Hito:" />
+        <EditText
+            android:id="@+id/txtSubproyecto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblSubproyecto"
+            android:textColor="#00B0FF" />
+        <TextView
+            android:id="@+id/lblMotivo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtSubproyecto"
+            android:text="Motivo:" />
+        <Spinner
+            android:id="@+id/ddlMotivo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblMotivo"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown" />
+        <TextView
+            android:id="@+id/lblImporte"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ddlMotivo"
+            android:text="Importe:" />
+        <EditText
+            android:id="@+id/txtImporte"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblImporte"
+            android:textColor="#00B0FF" />
+        <TextView
+            android:id="@+id/lblFecha"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtImporte"
+            android:text="Fecha:" />
+        <EditText
+            android:id="@+id/txtFecha"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblFecha"
+            android:textColor="#00B0FF" />
+        <TextView
+            android:id="@+id/lblCliente"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFecha"
+            android:text="Cliente/Proyecto:" />
+        <EditText
+            android:id="@+id/txtCliente"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblCliente"
+            android:textColor="#00B0FF" />
+        <TextView
+            android:id="@+id/lblAutorizar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCliente"
+            android:text="Debe Autorizar:" />
+        <EditText
+            android:id="@+id/txtAutorizar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblAutorizar"
+            android:textColor="#00B0FF" />
+        <TextView
+            android:id="@+id/lblPersonaAutorizante"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtAutorizar"
+            android:text="Persona Autorizante:" />
+        <Spinner
+            android:id="@+id/ddlPersonaAutorizante"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblPersonaAutorizante"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown" />
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ddlPersonaAutorizante"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip"
+            android:text="Submit" />
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btnSubmit"
+            android:layout_alignTop="@id/btnSubmit"
+            android:layout_marginLeft="10dip"
+            android:text="Cancel" />
+        <Button
+            android:id="@+id/btnAttach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btnCancel"
+            android:layout_alignTop="@id/btnCancel"
+            android:text="Attach Picture" />
+    </RelativeLayout>
+</ScrollView>
